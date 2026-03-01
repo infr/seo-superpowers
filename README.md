@@ -58,13 +58,16 @@ It starts the moment you mention SEO. A triage router kicks in and figures out w
 - **international-seo** - Hreflang, URL structure, localization, market prioritization
 - **ai-search-optimization** - AI Overviews, entity SEO, knowledge graph
 
+### Reference
+- **analytics-mcp** - GA4 query reference for the analytics-mcp MCP server (property discovery, report recipes, filters)
+
 ## MCP Integrations
 
 Skills use MCP servers when available, with manual data fallbacks:
 
 | MCP Server | Used By | Purpose |
 |-----------|---------|---------|
-| `analytics-mcp` (GA4) | analytics-review, seo-reporting | Traffic, conversion, landing page data |
+| `analytics-mcp` (GA4) | analytics-review, seo-reporting, analytics-mcp (reference) | Traffic, conversion, landing page data |
 | WebFetch | Most skills | Page source, headers, content analysis |
 | WebSearch | Most skills | SERPs, competitors, feature checks |
 

@@ -75,7 +75,8 @@ digraph analytics_review {
 
 ### Step 1: Determine data sources
 
-Check what's available:
+Check what's available. For GA4 query construction details, property discovery, and filter recipes, invoke `seo-superpowers:analytics-mcp`.
+
 - **analytics-mcp (GA4):** Use `get_account_summaries` to identify the right property, then `get_property_details` to confirm setup
 - **GSC MCP:** If configured, use for query and page-level search data
 - **Manual exports:** Ask user to export from GA4 (Explore report or standard reports) and GSC (Performance report) as CSV

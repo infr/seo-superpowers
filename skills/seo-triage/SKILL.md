@@ -56,6 +56,12 @@ ROUTE FIRST. A WRONG SKILL WASTES MORE TIME THAN ONE MORE CLARIFYING QUESTION.
 | `seo-superpowers:seo-reporting` | Stakeholder reports, KPI dashboards, ROI measurement | report, dashboard, KPIs, present results, SEO ROI |
 | `seo-superpowers:serp-trends-analysis` | Google Trends, SERP feature changes, seasonal patterns | trends, seasonal, SERP features, emerging topics, Google Trends |
 
+### Reference
+
+| Skill | Description | Trigger Keywords |
+|-------|-------------|-----------------|
+| `seo-superpowers:analytics-mcp` | GA4 query reference — property discovery, run_report params, SEO report recipes, filters | (invoked by other skills, not directly routed) |
+
 ### Specialized
 
 | Skill | Description | Trigger Keywords |
