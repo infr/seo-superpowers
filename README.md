@@ -8,6 +8,21 @@ Once you've got a strategy, *then* it guides you through the tactical work — a
 
 And because the skills trigger automatically, you don't need to do anything special. Your coding agent just has SEO Superpowers.
 
+## Installation
+
+```bash
+claude plugin marketplace add infr/seo-superpowers
+claude plugin install seo-superpowers
+```
+
+Start a new session and ask for SEO help. The agent should automatically invoke the `seo-triage` router and guide you to the right skill.
+
+### Updating
+
+```bash
+claude plugin update seo-superpowers
+```
+
 ## How It Works
 
 It starts the moment you mention SEO. A triage router kicks in and figures out what you need:
@@ -59,7 +74,7 @@ It starts the moment you mention SEO. A triage router kicks in and figures out w
 - **ai-search-optimization** - AI Overviews, entity SEO, knowledge graph
 
 ### Reference
-- **analytics-mcp** - GA4 query reference for the analytics-mcp MCP server (property discovery, report recipes, filters)
+- **analytics-mcp** - GA4 query reference for the [analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp) MCP server (property discovery, report recipes, filters)
 
 ## MCP Integrations
 
@@ -67,7 +82,7 @@ Skills use MCP servers when available, with manual data fallbacks:
 
 | MCP Server | Used By | Purpose |
 |-----------|---------|---------|
-| `analytics-mcp` (GA4) | analytics-review, seo-reporting, analytics-mcp (reference) | Traffic, conversion, landing page data |
+| [`analytics-mcp`](https://github.com/googleanalytics/google-analytics-mcp) (GA4) | analytics-review, seo-reporting, analytics-mcp (reference) | Traffic, conversion, landing page data |
 | WebFetch | Most skills | Page source, headers, content analysis |
 | WebSearch | Most skills | SERPs, competitors, feature checks |
 
@@ -80,18 +95,6 @@ No MCP configured? Skills ask for exported data (CSV from Ahrefs, SEMrush, GA4, 
 - **Actionable over comprehensive** - 5 prioritized actions beat 50 observations
 - **Tools-agnostic** - Works with whatever data you have
 
-## Installation
-
-### Claude Code
-
-```bash
-claude plugin add infr/seo-superpowers
-```
-
-### Verify Installation
-
-Start a new session and ask for SEO help. The agent should automatically invoke the `seo-triage` router and guide you to the right skill.
-
 ## Contributing
 
 Skills live directly in this repository. To contribute:
@@ -101,15 +104,9 @@ Skills live directly in this repository. To contribute:
 3. Follow the format in `.claude/CLAUDE.md` for skill structure
 4. Submit a PR
 
-## Updating
-
-```bash
-claude plugin update seo-superpowers
-```
-
 ## Credits
 
-Inspired by [obra/superpowers](https://github.com/obra/superpowers), the software development skills plugin for Claude Code. SEO Superpowers adapts the same skill architecture — session-start hooks, auto-triggering workflows, hard gates — to SEO workflows.
+Inspired by [obra/superpowers](https://github.com/obra/superpowers).
 
 ## License
 

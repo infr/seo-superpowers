@@ -79,14 +79,25 @@ Ask the user (one question at a time):
 
 ### Step 2: Assess current state
 
-Gather a high-level picture (not a full audit — that comes after strategy):
+Gather a high-level picture (not a full audit — that comes after strategy). **Check analytics-mcp first before asking the user about traffic.**
+
+**MCP-first path (try this first):**
+1. Use `get_account_summaries` to check if analytics-mcp is available and find the right GA4 property
+2. If available, pull a quick organic traffic snapshot using `run_report`:
+   - Dimensions: `date`, `sessionDefaultChannelGroup`; Metrics: `sessions`, `totalUsers`
+   - Date range: last 3 months, compared to previous 3 months
+   - Filter to organic channel — report the monthly session volume and trend direction (growing/flat/declining)
+3. Summarize findings to the user: "Your site gets roughly X organic sessions/month, trending [up/down/flat] over the last 3 months."
+
+**Fallback path (only if analytics-mcp is not configured):**
+Ask the user:
 - Is there existing organic traffic? Roughly how much?
 - Are there existing rankings for target keywords?
+
+**Always ask (regardless of MCP availability):**
 - How much content exists? Blog, product pages, landing pages?
 - Any known technical issues? (Slow site, indexation problems, recent redesign)
 - Has SEO been done before? What worked or didn't?
-
-If the user has analytics access, a quick look at organic trend direction is enough.
 
 ### Step 3: Identify competitive landscape
 

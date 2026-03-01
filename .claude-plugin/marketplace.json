@@ -7,8 +7,8 @@
   "plugins": [
     {
       "name": "seo-superpowers",
-      "description": "16 SEO workflow skills: technical audits, keyword research, content optimization, competitor analysis, link building, analytics, reporting, and more",
-      "version": "0.2.0",
+      "description": "17 SEO workflow skills: technical audits, keyword research, content optimization, competitor analysis, link building, analytics, reporting, and more",
+      "version": "0.3.0",
       "source": "./"
     }
   ]
