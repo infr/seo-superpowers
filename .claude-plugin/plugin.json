@@ -1,0 +1,12 @@
+{
+  "name": "seo-superpowers",
+  "description": "SEO workflow skills for Claude Code: technical audits, keyword research, content optimization, competitor analysis, link building, analytics, reporting, and more",
+  "version": "0.2.0",
+  "author": {
+    "name": "Kim Salmi"
+  },
+  "homepage": "https://github.com/infr/seo-superpowers",
+  "repository": "https://github.com/infr/seo-superpowers",
+  "license": "MIT",
+  "keywords": ["seo", "skills", "technical-seo", "content-optimization", "keyword-research", "analytics", "competitor-analysis", "link-building", "local-seo", "reporting", "workflows"]
+}
