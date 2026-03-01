@@ -39,6 +39,7 @@ ROUTE FIRST. A WRONG SKILL WASTES MORE TIME THAN ONE MORE CLARIFYING QUESTION.
 | Skill | Description | Trigger Keywords |
 |-------|-------------|-----------------|
 | `seo-superpowers:content-optimization` | Title tags, meta descriptions, headings, E-E-A-T, semantic coverage | optimize page, title tag, meta description, on-page, headings |
+| `seo-superpowers:content-writing` | SEO content creation from brief to draft — intent match, structure, E-E-A-T | write content, create article, blog post, draft, write for SEO |
 | `seo-superpowers:content-coverage` | Topic clusters, content gaps, cannibalization, content calendar | content strategy, topic clusters, content gaps, cannibalization |
 
 ### Off-Page & Links
@@ -103,6 +104,7 @@ If the user's request clearly matches a single skill, invoke it immediately:
 - "Audit my site" → `seo-superpowers:technical-audit`
 - "Research keywords for X" → `seo-superpowers:keyword-research`
 - "Optimize this page" → `seo-superpowers:content-optimization`
+- "Write an article about X" → `seo-superpowers:content-writing`
 - "Analyze my analytics" → `seo-superpowers:analytics-review`
 - "Check my backlinks" → `seo-superpowers:link-analysis`
 
@@ -147,6 +149,9 @@ Common workflow chains for complex goals:
 
 **Content Strategy:**
 `keyword-research` → `competitor-analysis` → `content-coverage` → `content-optimization`
+
+**Content Production:**
+`keyword-research` → `content-writing` → `content-optimization`
 
 **Performance Investigation:**
 `analytics-review` → `technical-audit` → `content-optimization`

@@ -57,6 +57,7 @@ It starts the moment you mention SEO. A triage router kicks in and figures out w
 
 ### Content & On-Page
 - **content-optimization** - Title tags, headings, E-E-A-T, semantic coverage
+- **content-writing** - SEO content creation from brief to draft — intent match, structure, E-E-A-T
 - **content-coverage** - Topic clusters, cannibalization, content calendar
 
 ### Off-Page & Links
