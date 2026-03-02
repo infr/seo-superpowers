@@ -35,6 +35,10 @@ You MUST create a task for each of these items and complete them in order:
 11. **Prioritize recommendations** — Impact vs effort for each finding
 12. **Generate optimization brief** — Specific, actionable changes with expected impact
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy, Target Keywords, and Content Plan for context.
+**On completion:** Update the matching Content Plan row status (e.g., "Optimized"). Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Gather page data

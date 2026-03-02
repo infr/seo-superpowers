@@ -22,7 +22,14 @@ escape_for_json() {
 }
 
 seo_triage_escaped=$(escape_for_json "$seo_triage_content")
-session_context="<EXTREMELY_IMPORTANT>\nYou have SEO Superpowers.\n\n**Below is the full content of your 'seo-superpowers:seo-triage' skill - your SEO router. For all other skills, use the 'Skill' tool:**\n\n${seo_triage_escaped}\n\n</EXTREMELY_IMPORTANT>"
+
+# Check if seo-plan.md exists in the current working directory
+seo_plan_note=""
+if [ -f "${PWD}/seo-plan.md" ]; then
+    seo_plan_note="\\n\\n**SEO Plan detected:** An SEO plan exists at \`seo-plan.md\`. Read it for context when running SEO skills."
+fi
+
+session_context="<EXTREMELY_IMPORTANT>\nYou have SEO Superpowers.${seo_plan_note}\n\n**Below is the full content of your 'seo-superpowers:seo-triage' skill - your SEO router. For all other skills, use the 'Skill' tool:**\n\n${seo_triage_escaped}\n\n</EXTREMELY_IMPORTANT>"
 
 # Output context injection as JSON.
 # Keep both shapes for compatibility:

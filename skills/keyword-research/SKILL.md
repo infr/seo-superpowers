@@ -32,6 +32,10 @@ You MUST create a task for each of these items and complete them in order:
 8. **Map to content** — Assign clusters to existing pages or new content needs
 9. **Generate keyword map** — Output prioritized keyword clusters with intent, volume, difficulty, target URLs
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy, Rules & Decisions, and Competitors for context.
+**On completion:** Update the Target Keywords section with a compact summary of prioritized clusters and quick wins. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Define scope

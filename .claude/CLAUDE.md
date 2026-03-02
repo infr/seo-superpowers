@@ -33,6 +33,14 @@ Each SKILL.md needs:
 7. **Red Flags + Rationalizations** — common ways of cutting corners and why they're wrong
 8. **Key Principles** — governing rules
 
+### SEO Plan file
+
+- `seo-brainstorming` creates `seo-plan.md` in the user's working directory from `seo-plan-template.md`
+- Other skills **read** the plan on start for context and **update** their section on completion
+- Skills write compact summaries (5-10 lines), not full reports — full analysis stays in conversation
+- Re-running a skill **replaces** its section; the Action Log is **append-only**
+- If `seo-plan.md` doesn't exist, skills skip integration silently — never create it unprompted
+
 ### Key rules
 
 - Skills are **workflows with decision points**, not flat checklists

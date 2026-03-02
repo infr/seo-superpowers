@@ -71,6 +71,12 @@ ROUTE FIRST. A WRONG SKILL WASTES MORE TIME THAN ONE MORE CLARIFYING QUESTION.
 | `seo-superpowers:international-seo` | Hreflang, ccTLD vs subfolder, localization, geotargeting | international, hreflang, multilingual, country targeting, localization |
 | `seo-superpowers:ai-search-optimization` | AI Overviews, entity SEO, knowledge graph, LLM visibility | AI search, AI Overviews, SGE, ChatGPT search, entity SEO |
 
+## SEO Plan Context
+
+Before routing, check if `seo-plan.md` exists in the working directory:
+- **If found:** Read it for context. Use Strategy and Rules & Decisions to inform routing. Mention relevant plan context when suggesting skills.
+- **If not found:** When suggesting `seo-superpowers:seo-brainstorming`, mention that it will create an `seo-plan.md` to track progress across skills.
+
 ## Routing Logic
 
 ```dot
@@ -107,6 +113,7 @@ If the user's request clearly matches a single skill, invoke it immediately:
 - "Write an article about X" → `seo-superpowers:content-writing`
 - "Analyze my analytics" → `seo-superpowers:analytics-review`
 - "Check my backlinks" → `seo-superpowers:link-analysis`
+- "Create an SEO plan" → `seo-superpowers:seo-brainstorming`
 
 ### Guided Routing
 

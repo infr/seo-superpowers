@@ -64,6 +64,10 @@ digraph international_seo {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Target Keywords for context.
+**On completion:** Add a `### International SEO` subsection under a `## Specialized` section (create if missing) with market tiers, structure recommendation, and hreflang status. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Structure assessment

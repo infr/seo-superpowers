@@ -63,6 +63,10 @@ digraph technical_audit {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Rules & Decisions for context.
+**On completion:** Update the Technical Health section with severity counts and priority fix. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Gather site access

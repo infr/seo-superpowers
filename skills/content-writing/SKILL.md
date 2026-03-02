@@ -63,6 +63,10 @@ digraph content_writing {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy, Target Keywords, and Content Plan for context.
+**On completion:** Update the matching Content Plan row status (e.g., "Draft complete"). Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Define the target

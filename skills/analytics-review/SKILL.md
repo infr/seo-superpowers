@@ -71,6 +71,10 @@ digraph analytics_review {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Target Keywords for context.
+**On completion:** Update the Performance section with key metrics and insight. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Determine data sources

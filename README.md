@@ -77,6 +77,14 @@ It starts the moment you mention SEO. A triage router kicks in and figures out w
 ### Reference
 - **analytics-mcp** - GA4 query reference for the [analytics-mcp](https://github.com/googleanalytics/google-analytics-mcp) MCP server (property discovery, report recipes, filters)
 
+## SEO Plan
+
+Skills can share context through a persistent `seo-plan.md` file in your project root. Run `seo-brainstorming` to create one — it captures your strategy, target keywords, competitor gaps, technical health, content plan, and performance metrics in a single scannable file.
+
+Other skills read the plan for context and update their section with findings. The plan stays compact (summary only, not full reports) and replaces on re-run (except the Action Log, which is append-only).
+
+The plan is opt-in: skills work normally without it and never create it on their own — only `seo-brainstorming` does.
+
 ## MCP Integrations
 
 Skills use MCP servers when available, with manual data fallbacks:

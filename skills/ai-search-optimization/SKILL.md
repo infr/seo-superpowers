@@ -64,6 +64,10 @@ digraph ai_search {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Target Keywords for context.
+**On completion:** Add a `### AI Search` subsection under a `## Specialized` section (create if missing) with AI Overview citation status, entity health, and priority actions. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: AI Overview presence check

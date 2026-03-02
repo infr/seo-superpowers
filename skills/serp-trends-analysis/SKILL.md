@@ -58,6 +58,10 @@ digraph serp_trends {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Target Keywords for context.
+**On completion:** Add a `### Trends` subsection under a `## Specialized` section (create if missing) with trend summary and timing recommendations. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Define topic scope

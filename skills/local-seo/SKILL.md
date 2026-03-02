@@ -63,6 +63,10 @@ digraph local_seo {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Rules & Decisions for context.
+**On completion:** Add a `### Local SEO` subsection under a `## Specialized` section (create if missing) with GBP status, review metrics, and priority actions. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Google Business Profile audit

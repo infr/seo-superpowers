@@ -36,6 +36,7 @@ You MUST create a task for each of these items and complete them in order:
 6. **Propose strategy options** — 2-3 approaches with trade-offs
 7. **Select and define strategy** — Chosen approach with phased roadmap
 8. **Map to skills** — Which seo-superpowers skills to run and in what order
+9. **Create SEO Plan** — Write `seo-plan.md` from template with Strategy, Rules, and Action Log entry
 
 ## Process Flow
 
@@ -51,7 +52,8 @@ digraph seo_brainstorming {
     "User approves strategy?" [shape=diamond];
     "Revise strategy" [shape=box];
     "Define phased roadmap" [shape=box];
-    "Map to skills" [shape=doublecircle];
+    "Map to skills" [shape=box];
+    "Create SEO Plan" [shape=doublecircle];
 
     "Understand the business" -> "Assess current state";
     "Assess current state" -> "Identify competitive landscape";
@@ -63,8 +65,13 @@ digraph seo_brainstorming {
     "Revise strategy" -> "Propose strategy options";
     "User approves strategy?" -> "Define phased roadmap" [label="yes"];
     "Define phased roadmap" -> "Map to skills";
+    "Map to skills" -> "Create SEO Plan";
 }
 ```
+
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists in the working directory, read it. Use Rules & Decisions for context.
+**On completion:** Create `seo-plan.md` from the template at `seo-plan-template.md` (in the plugin root) if it doesn't exist. Fill in the Strategy section with approved strategy, phases, and goals. Populate Rules & Decisions. Append to Action Log. Update the `Last updated` line.
 
 ## The Process
 
@@ -172,6 +179,22 @@ Recommend which seo-superpowers skills to run and in what order:
 | ongoing | `seo-superpowers:analytics-review` | Track progress |
 
 Offer to invoke the first skill in the sequence.
+
+### Step 9: Create SEO Plan
+
+After strategy approval, create a persistent `seo-plan.md` file in the working directory:
+
+1. Read the template from the plugin's `seo-plan-template.md`
+2. Replace `[Site/Project Name]` with the actual site/project name
+3. Fill in the **Strategy** section with the approved strategy: goal, approach, timeline, and phase table
+4. Fill in **Rules & Decisions** with any constraints or decisions made during brainstorming
+5. Add an entry to the **Action Log** with today's date, `seo-brainstorming`, and a one-line summary
+6. Update the `Last updated` line with today's date and `seo-brainstorming`
+7. Write the file to the working directory as `seo-plan.md`
+
+If `seo-plan.md` already exists, update the Strategy section and Action Log rather than overwriting the file.
+
+Tell the user: "I've created `seo-plan.md` with your strategy. Other SEO skills will read this for context and update it with their findings."
 
 ## Red Flags - STOP and Follow Process
 

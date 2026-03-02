@@ -69,6 +69,10 @@ digraph link_analysis {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy and Competitors for context.
+**On completion:** Update the Link Profile section with referring domains, toxicity, and anchor health summary. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Gather link data

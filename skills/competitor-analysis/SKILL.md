@@ -63,6 +63,10 @@ digraph competitor_analysis {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy, Target Keywords, and Rules & Decisions for context.
+**On completion:** Update the Competitors section with top competitors, keyword gaps, and link prospects. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Identify competitors

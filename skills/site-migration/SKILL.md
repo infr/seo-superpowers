@@ -74,6 +74,10 @@ digraph site_migration {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use Strategy, Technical Health, and Performance for context.
+**On completion:** Add a `### Migration` subsection under a `## Specialized` section (create if missing) with migration type, risk level, timeline, and status. Append to Action Log. If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Migration type assessment

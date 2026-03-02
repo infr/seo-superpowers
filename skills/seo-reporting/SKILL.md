@@ -68,6 +68,10 @@ digraph seo_reporting {
 }
 ```
 
+## SEO Plan Integration
+**On start:** If `seo-plan.md` exists, read it. Use all sections for report context.
+**On completion:** Append to Action Log only (the report itself is the deliverable). If file doesn't exist, don't create it.
+
 ## The Process
 
 ### Step 1: Define audience
