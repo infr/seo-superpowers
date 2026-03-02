@@ -6,10 +6,9 @@
 <!-- seo-brainstorming -->
 **Goal:**
 **Approach:**
-**Timeline:**
 
-| Phase | Period | Focus | Status |
-|-------|--------|-------|--------|
+| Phase | Focus | Skills | Status |
+|-------|-------|--------|--------|
 
 ## Target Keywords
 <!-- keyword-research -->

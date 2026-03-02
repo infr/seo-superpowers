@@ -7,7 +7,7 @@ description: Use when planning an SEO strategy, starting a new SEO project, deci
 
 ## Overview
 
-Strategic SEO planning before tactical execution. Understand the business, assess the current state, evaluate the competitive landscape, and define a phased strategy. Modeled after the superpowers brainstorming skill — no tactical work until strategy is defined and approved.
+Strategic SEO planning before tactical execution. Understand the business, assess the current state, evaluate the competitive landscape, and define a prioritized strategy. Modeled after the superpowers brainstorming skill — no tactical work until strategy is defined and approved.
 
 
 ## The Iron Law
@@ -34,7 +34,7 @@ You MUST create a task for each of these items and complete them in order:
 4. **Define SEO objectives** — Specific, measurable goals tied to business outcomes
 5. **Evaluate resource constraints** — Budget, team, content production capacity, technical access
 6. **Propose strategy options** — 2-3 approaches with trade-offs
-7. **Select and define strategy** — Chosen approach with phased roadmap
+7. **Select and define strategy** — Chosen approach with prioritized phases
 8. **Map to skills** — Which seo-superpowers skills to run and in what order
 9. **Create SEO Plan** — Write `seo-plan.md` from template with Strategy, Rules, and Action Log entry
 
@@ -51,7 +51,7 @@ digraph seo_brainstorming {
     "Propose strategy options" [shape=box];
     "User approves strategy?" [shape=diamond];
     "Revise strategy" [shape=box];
-    "Define phased roadmap" [shape=box];
+    "Define prioritized phases" [shape=box];
     "Map to skills" [shape=box];
     "Create SEO Plan" [shape=doublecircle];
 
@@ -63,8 +63,8 @@ digraph seo_brainstorming {
     "Propose strategy options" -> "User approves strategy?";
     "User approves strategy?" -> "Revise strategy" [label="no"];
     "Revise strategy" -> "Propose strategy options";
-    "User approves strategy?" -> "Define phased roadmap" [label="yes"];
-    "Define phased roadmap" -> "Map to skills";
+    "User approves strategy?" -> "Define prioritized phases" [label="yes"];
+    "Define prioritized phases" -> "Map to skills";
     "Map to skills" -> "Create SEO Plan";
 }
 ```
@@ -117,9 +117,9 @@ Ask the user:
 ### Step 4: Define SEO objectives
 
 Help the user set specific, measurable goals:
-- **Traffic goals:** "Increase organic sessions by X% in Y months"
+- **Traffic goals:** "Increase organic sessions by X%"
 - **Ranking goals:** "Rank on page 1 for [specific keywords]"
-- **Revenue goals:** "Generate X leads/sales per month from organic"
+- **Revenue goals:** "Generate X leads/sales from organic"
 - **Visibility goals:** "Establish topical authority in [topic area]"
 
 Goals must connect to business outcomes — ranking for vanity keywords isn't a strategy.
@@ -131,7 +131,7 @@ Understand what's realistic:
 - **Team:** Who will implement? In-house team, agency, the user themselves?
 - **Content capacity:** How many pages per month can be created/updated?
 - **Technical access:** Can they make site changes? CMS limitations?
-- **Timeline:** What's the expected timeline for results?
+- **Priorities:** What should be tackled first vs. later?
 
 Match ambition to resources — a 5-page-per-year content capacity can't support a 500-keyword strategy.
 
@@ -160,7 +160,7 @@ Lead with your recommended approach and explain why given the business context.
 ### Step 7: Select and define strategy
 
 Once the user approves an approach:
-- Define the phased roadmap (Phase 1: months 1-3, Phase 2: months 4-6, etc.)
+- Define the phased roadmap (Phase 1, Phase 2, etc.) ordered by priority
 - Set milestones for each phase tied to objectives
 - Identify the first 3-5 actions to take
 - Define how to measure progress
@@ -169,14 +169,14 @@ Once the user approves an approach:
 
 Recommend which seo-superpowers skills to run and in what order:
 
-| Phase | Skill | Purpose |
+| Order | Skill | Purpose |
 |-------|-------|---------|
 | 1 | `seo-superpowers:technical-audit` | Fix foundation |
-| 1 | `seo-superpowers:keyword-research` | Identify targets |
-| 2 | `seo-superpowers:content-coverage` | Plan content |
-| 2 | `seo-superpowers:content-optimization` | Improve existing |
-| 3 | `seo-superpowers:link-analysis` | Evaluate link profile |
-| ongoing | `seo-superpowers:analytics-review` | Track progress |
+| 2 | `seo-superpowers:keyword-research` | Identify targets |
+| 3 | `seo-superpowers:content-coverage` | Plan content |
+| 4 | `seo-superpowers:content-optimization` | Improve existing |
+| 5 | `seo-superpowers:link-analysis` | Evaluate link profile |
+| 6 | `seo-superpowers:analytics-review` | Track progress |
 
 Offer to invoke the first skill in the sequence.
 
@@ -186,7 +186,7 @@ After strategy approval, create a persistent `seo-plan.md` file in the working d
 
 1. Read the template from the plugin's `seo-plan-template.md`
 2. Replace `[Site/Project Name]` with the actual site/project name
-3. Fill in the **Strategy** section with the approved strategy: goal, approach, timeline, and phase table
+3. Fill in the **Strategy** section with the approved strategy: goal, approach, and phase table
 4. Fill in **Rules & Decisions** with any constraints or decisions made during brainstorming
 5. Add an entry to the **Action Log** with today's date, `seo-brainstorming`, and a one-line summary
 6. Update the `Last updated` line with today's date and `seo-brainstorming`
