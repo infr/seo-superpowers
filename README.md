@@ -20,7 +20,7 @@ Start a new session and ask for SEO help. The agent should automatically invoke 
 ### Updating
 
 ```bash
-claude plugin update seo-superpowers
+claude plugin update seo-superpowers@seo-superpowers
 ```
 
 ## How It Works
